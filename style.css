@@ -673,3 +673,7 @@ footer {
     display: inline-block;
     margin-top: 1.2rem;
 }
+.usage-card { padding: 2.6rem 1.5rem; text-align: center; }
+.usage-num { font-size: 3.4rem; font-weight: 700; color: #2c4a6e; line-height: 1; }
+.usage-label { margin-top: 0.6rem; color: var(--text-soft); font-weight: 500; }
+.usage-sub { margin-top: 0.4rem; font-size: 0.85rem; color: var(--text-soft); }

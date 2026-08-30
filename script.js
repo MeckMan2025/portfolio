@@ -25,3 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Live visit count for the APHUG tool (public GoatCounter counter, CORS-enabled).
+fetch('https://n1c0l3zcr3at10nz.goatcounter.com/counter/TOTAL.json')
+  .then(r => r.json())
+  .then(d => {
+    var c = document.getElementById('gc-count');
+    var u = document.getElementById('gc-unique');
+    if (c) c.textContent = Number(d.count).toLocaleString();
+    if (u) u.textContent = Number(d.count_unique).toLocaleString();
+  })
+  .catch(function(){});
