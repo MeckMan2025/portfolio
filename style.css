@@ -677,3 +677,5 @@ footer {
 .usage-num { font-size: 3.4rem; font-weight: 700; color: #2c4a6e; line-height: 1; }
 .usage-label { margin-top: 0.6rem; color: var(--text-soft); font-weight: 500; }
 .usage-sub { margin-top: 0.4rem; font-size: 0.85rem; color: var(--text-soft); }
+
+.usage-chart { margin-top: 1.4rem; min-height: 60px; }
