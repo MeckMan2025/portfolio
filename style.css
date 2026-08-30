@@ -645,3 +645,31 @@ footer {
     .project-grid { grid-template-columns: 1fr; }
     .about-card .icon-row { flex-wrap: wrap; }
 }
+
+/* USAGE / ANALYTICS */
+.usage {
+    background: var(--card);
+    text-align: center;
+    border-top: 3px solid var(--green-light);
+    border-bottom: 3px solid var(--blue-light);
+}
+.usage-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--card);
+    border: 2px solid var(--green-light);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 8px 30px var(--shadow);
+}
+.usage-card iframe {
+    width: 100%;
+    height: 620px;
+    border: 0;
+    display: block;
+    background: #fff;
+}
+.usage-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+}
