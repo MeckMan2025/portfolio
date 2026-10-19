@@ -1,0 +1,19 @@
+# Supabase pauses a free project after a week with no requests, and a paused
+# project takes the Live Usage charts (and StudyLink logins) down with it.
+# A read every two days counts as activity, so it stays awake. The key is the
+# public anon key already shipped in script.js.
+name: Keep the usage database awake
+on:
+  schedule:
+    - cron: '17 6 */2 * *'
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read one row from pageviews_daily
+        run: |
+          KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqbWlxdGl6dnV1aWxzenRiYWZrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTUzNjkzMjAsImV4cCI6MjA3MDk0NTMyMH0.mHjzI8hth6JMFW6WeDg2Dy0nFOprC0Tj4p5Cjs7Aq0E'
+          curl --fail --silent --show-error \
+            "https://ejmiqtizvuuilsztbafk.supabase.co/rest/v1/pageviews_daily?select=day&limit=1" \
+            -H "apikey: $KEY" -H "Authorization: Bearer $KEY"
