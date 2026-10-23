@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">&#9670; Portfolio</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#usage">Usage</a>
+            <a href="#ai-workflow">AI Workflow</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <!-- Detailed line-art starfish -->
+        <svg class="deco sf1" viewBox="0 0 120 120" aria-hidden="true">
+            <path class="shape" d="M60 8 L71.8 43.8 L109.5 43.9 L79 66.2 L90.6 102.1 L60 80 L29.4 102.1 L41 66.2 L10.5 43.9 L48.2 43.8 Z"/>
+            <path class="trace" d="M60 20 L70 46.25 L98 47.6 L76.2 65.25 L83.5 92.4 L60 77 L36.5 92.4 L43.8 65.25 L22 47.6 L50 46.25 Z"/>
+            <path class="trace" d="M60 60 L60 14 M60 60 L104 45 M60 60 L86 96 M60 60 L34 96 M60 60 L16 45"/>
+            <circle class="trace" cx="60" cy="60" r="7.5"/>
+            <g class="dot">
+                <circle cx="60" cy="30" r="1.6"/><circle cx="60" cy="39" r="1.6"/>
+                <circle cx="82" cy="52" r="1.6"/><circle cx="74" cy="56" r="1.6"/>
+                <circle cx="74" cy="84" r="1.6"/><circle cx="67" cy="76" r="1.6"/>
+                <circle cx="46" cy="84" r="1.6"/><circle cx="53" cy="76" r="1.6"/>
+                <circle cx="38" cy="52" r="1.6"/><circle cx="46" cy="56" r="1.6"/>
+            </g>
+        </svg>
+        <svg class="deco sf2" viewBox="0 0 120 120" aria-hidden="true">
+            <path class="shape" d="M60 8 L71.8 43.8 L109.5 43.9 L79 66.2 L90.6 102.1 L60 80 L29.4 102.1 L41 66.2 L10.5 43.9 L48.2 43.8 Z"/>
+            <path class="trace" d="M60 20 L70 46.25 L98 47.6 L76.2 65.25 L83.5 92.4 L60 77 L36.5 92.4 L43.8 65.25 L22 47.6 L50 46.25 Z"/>
+            <path class="trace" d="M60 60 L60 14 M60 60 L104 45 M60 60 L86 96 M60 60 L34 96 M60 60 L16 45"/>
+            <circle class="trace" cx="60" cy="60" r="7.5"/>
+            <g class="dot">
+                <circle cx="60" cy="30" r="1.6"/><circle cx="60" cy="39" r="1.6"/>
+                <circle cx="82" cy="52" r="1.6"/><circle cx="74" cy="56" r="1.6"/>
+                <circle cx="74" cy="84" r="1.6"/><circle cx="67" cy="76" r="1.6"/>
+                <circle cx="46" cy="84" r="1.6"/><circle cx="53" cy="76" r="1.6"/>
+                <circle cx="38" cy="52" r="1.6"/><circle cx="46" cy="56" r="1.6"/>
+            </g>
+        </svg>
+        <svg class="deco sf3" viewBox="0 0 120 120" aria-hidden="true">
+            <path class="shape" d="M60 8 L71.8 43.8 L109.5 43.9 L79 66.2 L90.6 102.1 L60 80 L29.4 102.1 L41 66.2 L10.5 43.9 L48.2 43.8 Z"/>
+            <path class="trace" d="M60 60 L60 14 M60 60 L104 45 M60 60 L86 96 M60 60 L34 96 M60 60 L16 45"/>
+            <circle class="trace" cx="60" cy="60" r="7.5"/>
+        </svg>
+        <!-- Ribbed scallop shell -->
+        <svg class="deco shell1" viewBox="0 0 120 120" aria-hidden="true">
+            <path class="shape" d="M60 96 Q 30 92 18.4 72 A8 8 0 0 1 26.1 62.1 A8 8 0 0 1 36 54.4 A8 8 0 0 1 47.6 49.6 A8 8 0 0 1 60 48 A8 8 0 0 1 72.4 49.6 A8 8 0 0 1 84 54.4 A8 8 0 0 1 93.9 62.1 A8 8 0 0 1 101.6 72 Q 90 92 60 96 Z"/>
+            <path class="trace" d="M60 96 L18.4 72 M60 96 L26.1 62.1 M60 96 L36 54.4 M60 96 L47.6 49.6 M60 96 L60 48 M60 96 L72.4 49.6 M60 96 L84 54.4 M60 96 L93.9 62.1 M60 96 L101.6 72"/>
+            <path class="trace" d="M34 80 Q 60 71 86 80"/>
+            <ellipse class="shape" cx="60" cy="98" rx="7" ry="5"/>
+        </svg>
+        <!-- Spiral shell -->
+        <svg class="deco shell2" viewBox="0 0 120 120" aria-hidden="true">
+            <path class="shape" d="M96 64 C 98 36 64 22 44 38 C 22 56 26 86 52 94 C 74 100 92 86 92 70 Z"/>
+            <path class="trace" d="M70 66 C 62 54 46 58 46 68 C 46 82 70 84 74 66 C 79 44 44 40 40 68 C 36 98 88 96 90 62"/>
+            <path class="trace" d="M58 40 Q 70 44 78 56 M40 60 Q 52 66 56 80"/>
+        </svg>
+        <div class="hero-content">
+            <span class="sparkle">&#10022;</span>
+            <div class="hero-badge">&#128026; Developer &amp; Creator</div>
+            <h1>I build things<br>that <span class="highlight">teach</span> &amp; <span class="highlight">connect</span></h1>
+            <p class="subtitle">Games, tools, and platforms that make learning fun and teamwork real.</p>
+            <a href="#projects" class="cta-btn">Explore Projects</a>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p class="section-sub">A little bit about what I do</p>
+        <div class="about-card">
+            <p>I'm a developer who builds interactive experiences across <strong>Roblox</strong>, the <strong>web</strong>, and <strong>3D environments</strong>. I care about making things that are fun, useful, and look great. Whether it's a multiplayer game that teaches leadership or a study tool for AP classes &mdash; I like solving real problems with creative solutions.</p>
+            <div class="icon-row">
+                <span class="skill-badge">&#127918; Roblox Studio</span>
+                <span class="skill-badge green">&#127760; Web Dev</span>
+                <span class="skill-badge orange">&#127912; Blender</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p class="section-sub">Things I've built and am building</p>
+        <div class="project-grid">
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#127959;</div>
+                <h3>Everything That's Scrum</h3>
+                <span class="project-tag">Web Platform</span>
+                <p>A project management and collaboration platform built for teams. Organize work, track sprints, and stay on top of tasks using Scrum methodology.</p>
+                <a href="https://everythingthatsscrum.meckman.org/" target="_blank" class="project-link">Visit Site &#8594;</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#127828;</div>
+                <h3>The Job Game</h3>
+                <span class="project-tag">Roblox Game</span>
+                <p>A 10-minute team business simulation. Players run restaurants, assign roles, and learn real skills like delegation, communication, and leadership. No two rounds are the same.</p>
+                <span class="project-status">&#9679; In Development</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#127960;</div>
+                <h3>Neighborhood</h3>
+                <span class="project-tag">Roblox Game</span>
+                <p>A living Roblox neighborhood where players explore, build, and hang out together. A social world focused on community, creativity, and everyday fun.</p>
+                <span class="project-status">&#9679; In Development</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#127758;</div>
+                <h3>APHUG Study Tool</h3>
+                <span class="project-tag">Study App</span>
+                <p>An interactive study tool for AP Human Geography. Review key concepts, practice terms, and prepare for the AP exam in a clean, focused interface.</p>
+                <a href="https://meckman2025.github.io/AP-HUG-Study-Tool/" target="_blank" class="project-link">Visit Site &#8594;</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#128218;</div>
+                <h3>Spanish 3 Study Tool</h3>
+                <span class="project-tag">Study App</span>
+                <p>Everything a Spanish 3 unit throws at you, in one place: vocabulary by week, conjugation drills that cover all six endings, a quiz on whether a verb is regular, boot or irregular, grammar practice for gustar and possessives, and the culture facts you get tested on.</p>
+                <a href="https://meckman2025.github.io/Spanish-3-Study-Tool/" target="_blank" class="project-link">Visit Site &#8594;</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#127874;</div>
+                <h3>bdaysup</h3>
+                <span class="project-tag">Web App</span>
+                <p>A search engine for free birthday perks. Type your city and discover brands and local shops offering birthday treats, gifts, and rewards &mdash; each with its logo, offer, and a direct link to claim it.</p>
+                <a href="https://bdaysup.vercel.app/" target="_blank" class="project-link">Visit Site &#8594;</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#128197;</div>
+                <h3>HangTime</h3>
+                <span class="project-tag">Web App</span>
+                <p>A social scheduling app that makes finding time to hang out effortless. Friends mark when they're free on a visual availability grid, and HangTime surfaces the moments everyone can meet.</p>
+                <a href="https://hangtime-omega.vercel.app/" target="_blank" class="project-link">Visit Site &#8594;</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-icon-wrap">&#129309;</div>
+                <h3>StudyLink</h3>
+                <span class="project-tag">Web App</span>
+                <p>A school peer-tutoring platform that matches students who need help with classmates who recently aced the same class &mdash; with class community boards and volunteer-hour tracking built in.</p>
+                <a href="https://meckman2025.github.io/StudyLink/" target="_blank" class="project-link">Visit Site &#8594;</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="usage" class="usage">
+        <h2>Live Usage</h2>
+        <p class="section-sub">Real visits to the things I&rsquo;ve built &mdash; one per browser per day, updated automatically, never reset</p>
+        <div id="usage-cards">Loading&hellip;</div>
+    </section>
+
+    <section id="ai-workflow" class="ai-workflow">
+        <h2>How I Work with AI</h2>
+        <p class="section-sub">AI-assisted development is my superpower</p>
+        <div class="ai-intro">
+            <p>I use <strong>Claude</strong> and <strong>ChatGPT</strong> as core parts of my development workflow. They're not just tools &mdash; they're like creative partners that help me build faster, think bigger, and solve problems I couldn't tackle alone.</p>
+        </div>
+        <div class="ai-grid">
+            <div class="ai-card claude">
+                <div class="ai-icon-wrap">&#9671;</div>
+                <h3>Claude</h3>
+                <span class="ai-tag">Code &amp; Architecture</span>
+                <ul>
+                    <li>Writing and debugging full codebases</li>
+                    <li>Building websites, scripts, and tools from scratch</li>
+                    <li>Setting up my desktop, installing apps, and automating tasks</li>
+                    <li>Working through complex problems step by step</li>
+                    <li>Editing 3D models and converting file formats</li>
+                </ul>
+            </div>
+            <div class="ai-card chatgpt">
+                <div class="ai-icon-wrap">&#10070;</div>
+                <h3>ChatGPT</h3>
+                <span class="ai-tag">Design &amp; Ideas</span>
+                <ul>
+                    <li>Generating custom icons and visual assets</li>
+                    <li>Brainstorming game mechanics and features</li>
+                    <li>Writing project descriptions and documentation</li>
+                    <li>Exploring design styles and aesthetic directions</li>
+                    <li>Quick research and learning new concepts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="ai-philosophy">
+            <div class="philosophy-icon">&#10022;</div>
+            <p><strong>My approach:</strong> I don't just copy-paste AI output. I direct the AI, iterate on results, and make creative decisions at every step. AI handles the heavy lifting so I can focus on the vision and the details that matter.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built with care by the sea &#128026; 2026</p>
+    </footer>
+
+    <script src="script.js?v=2"></script>
+</body>
+</html>
