@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // The order they appear in, and what to call them.
   var SITES = [
     { key: 'aphug',     name: 'APHUG Study Tool',   color: '#7aa7d8' },
-    { key: 'studylink', name: 'StudyLink',          color: '#84b58a' },
+    { key: 'studylink', name: 'SilverCircle',       color: '#84b58a' },
     { key: 'hangtime',  name: 'HangTime',           color: '#c99ad4' },
     { key: 'bdaysup',   name: 'bdaysup',            color: '#e0a878' }
   ];
