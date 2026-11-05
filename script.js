@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   var SITES = [
     { key: 'aphug',     name: 'APHUG Study Tool',   color: '#7aa7d8' },
     { key: 'studylink', name: 'SilverCircle',       color: '#84b58a' },
+    { key: 'spanish',   name: 'Spanish Study Tool', color: '#d98b8b' },
     { key: 'hangtime',  name: 'HangTime',           color: '#c99ad4' },
     { key: 'bdaysup',   name: 'bdaysup',            color: '#e0a878' }
   ];
