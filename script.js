@@ -49,7 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
       var x = pad + i * bw, y = H - pad - h;
       return '<rect x="' + (x + bw * 0.12).toFixed(1) + '" y="' + y.toFixed(1) +
         '" width="' + (bw * 0.76).toFixed(1) + '" height="' + h.toFixed(1) +
-        '" rx="2" fill="' + color + '"><title>' + r.day + ': ' + r.n + '</title></rect>';
+        '" rx="2" fill="' + color + '"><title>' + r.day + ': ' + r.n + '</title></rect>' +
+        // The day's number sits on top of its bar, sized to fit the bar.
+        (r.n ? '<text x="' + (x + bw / 2).toFixed(1) + '" y="' + (y - 4).toFixed(1) +
+          '" font-size="' + Math.min(12, Math.max(7, bw * 0.75)).toFixed(1) +
+          '" font-weight="600" fill="#6a6a7a" text-anchor="middle">' + r.n + '</text>' : '');
     }).join('');
     return '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="xMidYMid meet" style="width:100%;height:auto">' +
       '<line x1="' + pad + '" y1="' + (H - pad) + '" x2="' + (W - pad) + '" y2="' + (H - pad) + '" stroke="#e2e2ea"/>' + bars +
